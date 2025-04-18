@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="task-tracker-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <header class="header">
+            Task Tracker
+        </header>
+        <div class="empty_input"></div>
+        <form>
+            <fieldset class="task_form">
+                <input type="text" name="task" placeholder="Start writing and press enter to create task" class="task_input" required>
+                <button type="submit" class="submit_button"><i>&#8629</i></button>
+            </fieldset>
+        </form>
+
+        <ul class="task_items">
+        </ul>
+    </div>
+    <script src="task-tracker-function.js"></script>
+</body>
+</html>

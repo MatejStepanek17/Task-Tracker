@@ -1,0 +1,138 @@
+body{
+    font-family: "Roboto";
+    background-color: #f0f0f0;
+
+    display: flex;
+    justify-content: center;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.header{
+    font-size: 20px;
+    font-weight: 450;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.task_form{
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+.task_input{
+    width: 300px;
+    height: 20px;
+    padding-top: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-style: hidden;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    font-weight: 350;
+    padding-right: 10px;
+}
+.task_input:focus{
+    outline: none;
+    border: none;
+}
+.submit_button{
+    background-color: black;
+    width: 30px;
+    height: 24px;
+    border-radius: 5px;
+    border-style: hidden;
+    color: #f0f0f0;
+    font-size: 16px;
+    font-weight: 800;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+.submit_button:hover{
+    background-color: gray;
+}
+
+
+.empty_input{
+    font-size: 16px;
+    font-weight: 350;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+@keyframes fade-out{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.fade-out{
+    animation: fade-out 3000ms forwards;
+}
+
+.task_items{
+    list-style-type: none;
+    padding:0px;
+}
+
+.task_item{
+    border-bottom: gray 1px solid;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.task_text{
+    margin-left: 10px;
+}
+
+.checkbox{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.checkbox:checked{
+    background-color: gray;
+    border: 2px solid black;
+}
+
+.delete_button{
+    background-color: #f0f0f0;
+    width: 30px;
+    height: 24px;
+    border-radius: 5px;
+    border-style: hidden;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: auto;
+}
+.delete_button:hover .trash_icon{
+    color: gray;
+}
+
+.task_completed{
+    text-decoration: line-through;
+    color: gray;
+    text-decoration-color: black;
+    text-decoration-thickness: 1px;
+}
